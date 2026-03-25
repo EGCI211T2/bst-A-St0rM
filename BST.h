@@ -117,8 +117,17 @@ void inOrder(TreeNodePtr treePtr) {
   //printTree(rootPtr,0);
 
 void printTree(TreeNodePtr treePtr,int l) {
-  // TreeNodePtr treePtr=rootPtr;
-        // end if
+  if (treePtr) {
+    // Print right subtree first so the tree appears rotated 90 degrees.
+    printTree(treePtr->move_right(), l + 1);
+
+    for (int i = 0; i < l; ++i) {
+      cout << "    ";
+    }
+    cout << treePtr->get_value() << endl;
+
+    printTree(treePtr->move_left(), l + 1);
+  }
 } // end function
 
 

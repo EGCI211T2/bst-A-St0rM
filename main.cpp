@@ -14,6 +14,10 @@ int main(int argc, char **argv) {
    b.print(1);
    cout << "postOrder:" << endl;
    b.print(2);
+  cout << "Tree:" << endl;
+  b.print(4);
+
+  
 
   //b.searchtree(11);
  
