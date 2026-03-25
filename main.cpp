@@ -8,7 +8,12 @@ int main(int argc, char **argv) {
   for (i = 1; i < argc; ++i) {
        b.insert_node (atoi(argv[i]));
   } // end for
-   b.print();//in order function
+   cout << "inOrder:" << endl;
+   b.print(0);
+   cout << "preOrder:" << endl;
+   b.print(1);
+   cout << "postOrder:" << endl;
+   b.print(2);
 
   //b.searchtree(11);
  
